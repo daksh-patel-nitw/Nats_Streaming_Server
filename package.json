@@ -1,0 +1,26 @@
+{
+  "name": "nats",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/daksh-patel-nitw/Nats_Streaming_Server#readme",
+  "bugs": {
+    "url": "https://github.com/daksh-patel-nitw/Nats_Streaming_Server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daksh-patel-nitw/Nats_Streaming_Server.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "ts-node-dev --rs --notify false src/publisher.ts",
+    "listen": "ts-node-dev --rs --notify false src/listener.ts"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0",
+    "node-nats-streaming": "^0.3.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
